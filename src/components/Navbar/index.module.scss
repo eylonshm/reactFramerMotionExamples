@@ -14,6 +14,12 @@ a {
   color: black;
 }
 
+.active {
+  a {
+    color: #4fc9c5;
+  }
+}
+
 .navElement {
   background-color: transparent;
   padding: 0;
