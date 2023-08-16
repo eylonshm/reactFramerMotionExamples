@@ -12,7 +12,6 @@ const Opacity = () => (
     }}
     animate={{
       x: 0,
-      position: 'fixed',
       opacity: 1,
       height: '400px',
       width: '700px',

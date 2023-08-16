@@ -1,0 +1,32 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  padding-top: 8px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.navElement {
+  background-color: transparent;
+
+  a {
+    font-size: 1.5rem;
+    transition: all 0.4s ease;
+    &:hover {
+      color: red;
+    }
+  }
+
+  span {
+    padding: 8px;
+    transition: all 0.3s ease;
+  }
+}
