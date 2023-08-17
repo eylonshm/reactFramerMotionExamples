@@ -1,8 +1,9 @@
 import React, { useRef } from 'react'
-import { motion, useScroll, useSpring, useInView } from 'framer-motion'
+import { motion, useInView } from 'framer-motion'
 import styles from './index.module.scss'
 import LoremIpsum from '../LoremIpsum'
 import { Button } from '../index'
+import useScrollIndicator from '../../hooks/useScrollIndicator'
 
 const headerVariants = {
   headerNotInView: {
@@ -18,12 +19,7 @@ const headerVariants = {
 const Scroll = () => {
   const headerRef = useRef(null)
   const isHeaderInView = useInView(headerRef)
-  const { scrollYProgress } = useScroll()
-  const scaleX = useSpring(scrollYProgress, {
-    stiffness: 100,
-    damping: 30,
-    restDelta: 0.001,
-  })
+  const scaleX = useScrollIndicator({})
 
   const scrollToTop = () =>
     headerRef.current.scrollIntoView({
