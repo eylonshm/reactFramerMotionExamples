@@ -1,13 +1,14 @@
 import './App.css'
 import { useMemo } from 'react'
 import { Routes, Route } from 'react-router-dom'
-import { Opacity, Navbar, Scroll, Button, Home } from './components'
+import { Opacity, Navbar, Scroll, Button, Home, Image } from './components'
 
 const routes = [
   { path: '/', element: <Home /> },
   { path: '/opacity', element: <Opacity /> },
   { path: '/button', element: <Button /> },
   { path: '/scroll', element: <Scroll /> },
+  { path: '/image', element: <Image /> },
 ]
 
 const renderRoutes = (routes) => (

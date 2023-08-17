@@ -1,0 +1,38 @@
+.wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 6px solid black;
+  border-radius: 4px;
+  cursor: pointer;
+  height: 408px;
+  width: 612px;
+  overflow: hidden;
+
+  .title {
+    color: white;
+    z-index: 2;
+    margin: 0;
+    letter-spacing: 2px;
+  }
+
+  .outerTitle {
+    position: absolute;
+    top: 80px;
+    right: -60px;
+  }
+
+  .titleWrapper {
+    position: absolute;
+    padding: 32px;
+    top: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: -150px;
+    background-color: black;
+    height: 20px;
+    border-radius: 8px;
+  }
+}
