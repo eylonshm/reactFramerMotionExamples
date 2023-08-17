@@ -4,6 +4,7 @@ export default function LoremIpsum(props) {
   return (
     <motion.div {...props}>
       <article>
+        <h1>Sub-header</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac
           rhoncus quam.
