@@ -33,3 +33,9 @@ button {
   border: none;
   font-family: 'Tilt Prism';
 }
+
+input,
+textarea,
+button {
+  font-family: inherit;
+}

@@ -2,6 +2,10 @@
   flex: 1;
   width: 100%;
 
+  .header {
+    padding-top: 10px;
+  }
+
   .progressBar {
     position: fixed;
     top: 0;
@@ -10,5 +14,11 @@
     height: 10px;
     background: #4fc9c5;
     transform-origin: 0%;
+  }
+
+  .jumpButton {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
   }
 }
