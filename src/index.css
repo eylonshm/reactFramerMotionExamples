@@ -11,6 +11,10 @@ html {
   width: 100vw;
 }
 
+html::-webkit-scrollbar {
+  display: none;
+}
+
 #root {
   padding: 0;
   margin: 0;
