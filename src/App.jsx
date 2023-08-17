@@ -1,13 +1,14 @@
 import './App.css'
 import { useMemo } from 'react'
 import { Routes, Route } from 'react-router-dom'
-import { Navbar, Scroll, Button, Home, Image } from './components'
+import { Navbar, Scroll, Button, Home, Image, DragLayers } from './components'
 
 const routes = [
   { path: '/', element: <Home /> },
   { path: '/button', element: <Button /> },
   { path: '/scroll', element: <Scroll /> },
   { path: '/image', element: <Image /> },
+  { path: '/reveal', element: <DragLayers /> },
 ]
 
 const renderRoutes = (routes) => (

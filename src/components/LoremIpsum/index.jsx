@@ -1,6 +1,8 @@
-export default function LoremIpsum() {
+import { motion } from 'framer-motion'
+
+export default function LoremIpsum(props) {
   return (
-    <>
+    <motion.div {...props}>
       <article>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac
@@ -71,6 +73,6 @@ export default function LoremIpsum() {
         </p>
         <p>Quisque convallis ligula non magna efficitur tincidunt.</p>
       </article>
-    </>
+    </motion.div>
   )
 }
