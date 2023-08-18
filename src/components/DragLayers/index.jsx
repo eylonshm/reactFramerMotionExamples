@@ -22,7 +22,8 @@ const DragLayers = () => {
           ease: 'linear',
           duration: 1,
           opacity: {
-            delay: 0.8,
+            delay: 1.2,
+            duration: 1.5,
           },
         }}
       />
