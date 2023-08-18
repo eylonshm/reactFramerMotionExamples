@@ -12,10 +12,10 @@
 
   .secondLayer {
     color: white;
-    background-image: url(berries.jpg);
+    background-image: url('/berries.jpg');
     background-size: cover;
-    -webkit-mask-image: url(circle.svg);
-    mask-image: url(circle.svg);
+    -webkit-mask-image: url('/circle.svg');
+    mask-image: url('/circle.svg');
     mask-size: 400px;
     -webkit-mask-size: 400px;
     -webkit-mask-repeat: no-repeat;
