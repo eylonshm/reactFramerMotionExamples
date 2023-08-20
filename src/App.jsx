@@ -3,6 +3,7 @@ import { useState } from 'react'
 import { useMemo } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import { Navbar, Scroll, Button, Home, Image, DragLayers } from './components'
+import Logo from './components/Logo'
 
 const routes = [
   { path: '/', element: <Home /> },
@@ -10,6 +11,7 @@ const routes = [
   { path: '/scroll', element: <Scroll /> },
   { path: '/image', element: <Image /> },
   { path: '/reveal', element: <DragLayers /> },
+  { path: '/svg', element: <Logo /> },
 ]
 
 const renderRoutes = (routes) => (

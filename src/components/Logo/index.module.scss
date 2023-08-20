@@ -1,0 +1,8 @@
+@import url('../../styles/theme.styles.scss');
+
+.wrapper {
+  path {
+    fill: var(--colorPrimary);
+    stroke: var(--colorSecondary);
+  }
+}
