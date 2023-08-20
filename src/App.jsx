@@ -2,12 +2,10 @@ import './App.css'
 import { useState } from 'react'
 import { useMemo } from 'react'
 import { Routes, Route } from 'react-router-dom'
-import { Navbar, Scroll, Button, Home, Image, DragLayers } from './components'
-import Logo from './components/Logo'
+import { Navbar, Scroll, Home, Image, DragLayers, Logo } from './components'
 
 const routes = [
   { path: '/', element: <Home /> },
-  { path: '/button', element: <Button /> },
   { path: '/scroll', element: <Scroll /> },
   { path: '/image', element: <Image /> },
   { path: '/reveal', element: <DragLayers /> },
