@@ -65,10 +65,17 @@ l0 -50 45 0 45 0 0 50 c0 49 1 50 30 50 l30 0 0 -131 0 -130 -27 3 c-26 3 -28
         className={styles.star}
         initial={{
           scale: 0.02,
-          translateX: -100,
+          translateX: -80,
           opacity: 0,
+          rotate: 260,
         }}
-        animate={{ scale: 0.2, translateY: -200, translateX: 5, opacity: 1 }}
+        animate={{
+          scale: 0.2,
+          translateY: -200,
+          translateX: 5,
+          opacity: 1,
+          rotate: 0,
+        }}
         transition={{
           delay: 3,
           duration: 1,
