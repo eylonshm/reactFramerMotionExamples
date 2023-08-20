@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styles from './index.module.scss'
 import { useLocation } from 'react-router-dom'
 import Tab from './Tab'
 import DarkModeToggle from '../DarkModeToggle'
+import Toggle from './Toggle'
 
 const Navbar = ({ paths, changeTheme }) => {
+  const [open, setOpen] = useState(true)
   let location = useLocation()
 
   const renderLinks = (paths) =>
@@ -12,9 +14,17 @@ const Navbar = ({ paths, changeTheme }) => {
       <Tab key={path} path={path} isActive={location.pathname === path} />
     ))
 
+  const toggleNavBar = () => {
+    setOpen((prevOpen) => !prevOpen)
+  }
   return (
     <div className={styles.wrapper}>
-      {renderLinks(paths)}
+      <Toggle
+        toggle={toggleNavBar}
+        isToggled={open}
+        className={styles.toggle}
+      />
+      {open && renderLinks(paths)}
       <DarkModeToggle className={styles.darkModeToggle} onClick={changeTheme} />
     </div>
   )

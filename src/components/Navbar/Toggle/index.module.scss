@@ -1,0 +1,32 @@
+@import url('../../../styles/theme.styles.scss');
+
+.wrapper {
+  cursor: pointer;
+  padding: 2px;
+  path {
+    stroke: var(--colorText);
+    transition: 0.3s;
+  }
+
+  &:hover {
+    path {
+      transition: 0.5s;
+      stroke: var(--colorTextHover);
+    }
+  }
+
+  .topLineToggled {
+    transition: 0.3s;
+    transform: translateX(2px) translateY(16px) rotate(-45deg) !important;
+  }
+
+  .bottomLineToggled {
+    transition: 0.3s;
+    transform: translateX(16px) translateY(-9px) rotate(45deg) !important;
+  }
+
+  .centerLineToggled {
+    transition: 0.1s;
+    opacity: 0;
+  }
+}

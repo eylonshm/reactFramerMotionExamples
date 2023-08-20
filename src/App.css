@@ -21,10 +21,12 @@
   --colorPrimary: #121212;
   --colorSecondary: #bb86fc;
   --colorText: white;
+  --colorTextHover: #c4c4c4;
 }
 
 .lightTheme {
   --colorPrimary: #fff;
   --colorSecondary: #4fc9c5;
   --colorText: black;
+  --colorTextHover: rgba(000, 000, 000, 0.7);
 }
