@@ -1,8 +1,11 @@
 @import url('../../styles/theme.styles.scss');
 
 .wrapper {
-  path {
+  .logo {
     fill: var(--colorPrimary);
     stroke: var(--colorSecondary);
+  }
+  .star {
+    fill: var(--colorSecondary);
   }
 }
