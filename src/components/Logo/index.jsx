@@ -7,7 +7,7 @@ const Logo = () => {
       <motion.path
         transform='translate(0,364) scale(0.1,-0.1)'
         fill='white'
-        pathLength={0}
+        initial={{ pathLength: 0 }}
         animate={{ pathLength: 1 }}
         transition={{
           duration: 10,
