@@ -1,0 +1,11 @@
+html[data-theme='light'] {
+  --colorPrimary: #fff;
+  --colorSecondary: #4fc9c5;
+  --colorText: black;
+}
+
+html[data-theme='dark'] {
+  --colorPrimary: #121212;
+  --colorSecondary: #bb86fc;
+  --colorText: white;
+}

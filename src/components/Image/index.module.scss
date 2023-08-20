@@ -1,9 +1,11 @@
+@import url('../../styles/theme.styles.scss');
+
 .wrapper {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 6px solid black;
+  border: 6px solid var(--colorText);
   border-radius: 4px;
   cursor: pointer;
   height: 408px;
@@ -11,7 +13,7 @@
   overflow: hidden;
 
   .title {
-    color: white;
+    color: var(--colorPrimary);
     z-index: 3;
     margin: 0;
     letter-spacing: 2px;
@@ -32,7 +34,7 @@
     justify-content: center;
     align-items: center;
     right: -150px;
-    background-color: black;
+    background-color: var(--colorText);
     height: 20px;
     border-radius: 8px;
   }

@@ -1,8 +1,13 @@
 import { motion } from 'framer-motion'
+import styles from './index.module.scss'
+import classNames from 'classnames'
 
 export default function LoremIpsum(props) {
   return (
-    <motion.div {...props}>
+    <motion.div
+      {...props}
+      className={classNames(styles.wrapper, props.className)}
+    >
       <article>
         <h1>Sub-header</h1>
         <p>

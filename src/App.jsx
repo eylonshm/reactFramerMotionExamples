@@ -1,4 +1,6 @@
 import './App.css'
+import { motion } from 'framer-motion'
+import { useEffect, useState } from 'react'
 import { useMemo } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import { Navbar, Scroll, Button, Home, Image, DragLayers } from './components'
@@ -20,16 +22,21 @@ const renderRoutes = (routes) => (
 )
 
 function App() {
+  const [theme, setTheme] = useState('light')
   const paths = useMemo(() => {
     const removeHomeRoute = routes.slice(1)
     return removeHomeRoute.map(({ path }) => path)
   }, [])
 
+  const changeTheme = () => {
+    setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'))
+  }
+
   return (
-    <div className='App'>
-      <Navbar paths={paths} />
+    <motion className={`App ${theme}Theme`}>
+      <Navbar paths={paths} changeTheme={changeTheme} />
       {renderRoutes(routes)}
-    </div>
+    </motion>
   )
 }
 

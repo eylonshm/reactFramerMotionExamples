@@ -1,8 +1,13 @@
+@import url('./styles/theme.styles.scss');
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+}
+
+html {
 }
 
 .App {
@@ -11,4 +16,18 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  background-color: var(--colorPrimary);
+  transition: color 0.4s ease-in-out, background-color 0.4s ease-in-out;
+}
+
+.darkTheme {
+  --colorPrimary: #121212;
+  --colorSecondary: #bb86fc;
+  --colorText: white;
+}
+
+.lightTheme {
+  --colorPrimary: #fff;
+  --colorSecondary: #4fc9c5;
+  --colorText: black;
 }
