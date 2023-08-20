@@ -5,11 +5,20 @@ import classNames from 'classnames'
 import styles from './index.module.scss'
 
 const buttonVariants = {
+  init: {
+    opacity: 0,
+  },
   hovered: {
     scale: 1.2,
   },
   tapped: {
     scale: 0.8,
+  },
+  animate: {
+    opacity: 1,
+  },
+  exit: {
+    opacity: 0,
   },
 }
 
@@ -31,6 +40,8 @@ const Tab = ({ path, isActive }) => {
   return (
     <motion.button
       initial='init'
+      animate='animate'
+      exit='exit'
       className={classNames(styles.navElement, {
         [styles.active]: isActive,
       })}

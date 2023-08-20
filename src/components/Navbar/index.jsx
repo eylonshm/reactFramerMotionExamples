@@ -4,6 +4,7 @@ import { useLocation } from 'react-router-dom'
 import Tab from './Tab'
 import DarkModeToggle from '../DarkModeToggle'
 import Toggle from './Toggle'
+import { AnimatePresence } from 'framer-motion'
 
 const Navbar = ({ paths, changeTheme }) => {
   const [open, setOpen] = useState(true)
@@ -24,7 +25,8 @@ const Navbar = ({ paths, changeTheme }) => {
         isToggled={open}
         className={styles.toggle}
       />
-      {open && renderLinks(paths)}
+      <AnimatePresence>{open && renderLinks(paths)}</AnimatePresence>
+
       <DarkModeToggle className={styles.darkModeToggle} onClick={changeTheme} />
     </div>
   )
