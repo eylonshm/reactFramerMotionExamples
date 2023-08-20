@@ -7,12 +7,11 @@ import useScrollIndicator from '../../hooks/useScrollIndicator'
 
 const headerVariants = {
   headerNotInView: {
-    opacity: 0.5,
+    opacity: 0.2,
   },
 
   headerInView: {
     opacity: 1,
-    scale: 1.5,
   },
 }
 
@@ -36,6 +35,11 @@ const Scroll = () => {
         ref={headerRef}
         variants={headerVariants}
         className={styles.header}
+        transition={{
+          opacity: {
+            duration: 1,
+          },
+        }}
       >
         Scroll Spring animation
       </motion.h1>
