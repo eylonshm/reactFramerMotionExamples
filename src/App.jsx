@@ -1,6 +1,5 @@
 import './App.css'
-import { motion } from 'framer-motion'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { useMemo } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import { Navbar, Scroll, Button, Home, Image, DragLayers } from './components'
