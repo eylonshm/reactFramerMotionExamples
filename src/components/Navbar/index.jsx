@@ -5,6 +5,7 @@ import Tab from './Tab'
 import DarkModeToggle from '../DarkModeToggle'
 import Toggle from './Toggle'
 import { AnimatePresence } from 'framer-motion'
+import ToggleText from './ToggleText'
 
 const Navbar = ({ paths, changeTheme }) => {
   const [open, setOpen] = useState(true)
@@ -20,11 +21,10 @@ const Navbar = ({ paths, changeTheme }) => {
   }
   return (
     <div className={styles.wrapper}>
-      <Toggle
-        toggle={toggleNavBar}
-        isToggled={open}
-        className={styles.toggle}
-      />
+      <div className={styles.toggle}>
+        <Toggle toggle={toggleNavBar} isToggled={open} />
+        <AnimatePresence>{!open && <ToggleText />}</AnimatePresence>
+      </div>
       <AnimatePresence>{open && renderLinks(paths)}</AnimatePresence>
 
       <DarkModeToggle className={styles.darkModeToggle} onClick={changeTheme} />
