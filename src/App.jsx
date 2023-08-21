@@ -32,10 +32,10 @@ function App() {
   }
 
   return (
-    <motion className={`App ${theme}Theme`}>
+    <div className={`App ${theme}Theme`}>
       <Navbar paths={paths} changeTheme={changeTheme} />
       {renderRoutes(routes)}
-    </motion>
+    </div>
   )
 }
 

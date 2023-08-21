@@ -6,7 +6,7 @@ const DarkModeToggle = ({ className, onClick }) => {
   return (
     <div className={classNames(styles.wrapper, className)}>
       <input type='checkbox' id='darkModeToggle' />
-      <label for='darkModeToggle' onClick={onClick}>
+      <label htmlFor='darkModeToggle' onClick={onClick}>
         <Moon className={styles.moon} />
         <Sun className={styles.sun} />
       </label>

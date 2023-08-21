@@ -3,7 +3,7 @@ export const splitStringIntoSpans = (str) => {
   return (
     <>
       {chars.map((char, index) => (
-        <span class={`char${index}`}>{char}</span>
+        <span className={`char${index}`}>{char}</span>
       ))}
     </>
   )
